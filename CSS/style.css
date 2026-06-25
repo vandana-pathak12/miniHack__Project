@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #fff1f5;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 2px 15px rgba(236,72,153,0.08);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+}
+
+.logo span{
+    font-size: 28px;
+    font-weight: 700;
+    color: #ec4899;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #ec4899;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align: center;
+    padding: 120px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff1f5,
+        #fce7f3
+    );
+
+    color: #1f2937;
+}
+
+.hero h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p{
+    max-width: 750px;
+    margin: 0 auto 35px;
+    font-size: 20px;
+}
+
+.hero button{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+
+    background: #ec4899;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow:
+    0 8px 20px rgba(236,72,153,0.25);
+}
+
+.hero button:hover{
+    background: #db2777;
+    transform: translateY(-4px);
+}
+
+/* Features Section */
+
+.features{
+    padding: 90px 50px;
+    text-align: center;
+}
+
+.features h2{
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #ec4899;
+}
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 260px;
+
+    padding: 30px 25px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    border: 1px solid #fce7f3;
+
+    box-shadow:
+    0 10px 25px rgba(236,72,153,0.08);
+
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h3{
+    margin-bottom: 15px;
+    color: #ec4899;
+}
+
+/* Benefits Section */
+
+.benefits{
+    padding: 90px 20px;
+    background: #fff7fa;
+    text-align: center;
+}
+
+.benefits h2{
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+    color: #ec4899;
+}
+
+.benefits ul{
+    list-style: none;
+}
+
+.benefits li{
+    margin: 18px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Footer */
+
+footer{
+    background: linear-gradient(
+        135deg,
+        #ec4899,
+        #f472b6
+    );
+
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+footer p{
+    margin: 10px 0;
+}
+/* =========================
+   PRODUCT OVERVIEW
+========================= */
+
+.product-overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    padding: 80px;
+
+    background: #fff7fa;
+}
+
+.overview-content{
+    flex: 1;
+}
+
+.overview-content h1{
+    font-size: 3.5rem;
+    color: #ec4899;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.overview-content p{
+    font-size: 18px;
+    color: #1f2937;
+    max-width: 550px;
+}
+
+.overview-image{
+    flex: 1;
+    text-align: center;
+}
+
+.overview-image img{
+    width: 100%;
+    max-width: 600px;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 15px 35px rgba(236,72,153,0.15);
+
+    transition: 0.4s;
+}
+
+.overview-image img:hover{
+    transform: scale(1.03);
+}
+
+/* =========================
+   PRODUCT FEATURES
+========================= */
+
+.product-features{
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.product-features h2{
+    color: #ec4899;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* =========================
+   PRICING SECTION
+========================= */
+
+.pricing{
+    padding: 80px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.pricing h2{
+    color: #ec4899;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.pricing-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.plan{
+    width: 280px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #fce7f3;
+
+    box-shadow:
+    0 10px 25px rgba(236,72,153,0.08);
+
+    transition: 0.4s;
+}
+
+.plan:hover{
+    transform: translateY(-10px);
+}
+
+.plan h3{
+    color: #ec4899;
+    margin-bottom: 15px;
+}
+
+.plan h1{
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.plan p{
+    margin: 10px 0;
+}
+
+.popular{
+    border: 3px solid #ec4899;
+}
+
+.plan button{
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    background: #ec4899;
+
+    color: white;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.plan button:hover{
+    background: #db2777;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials{
+    padding: 80px 20px;
+    background: #fff7fa;
+    text-align: center;
+}
+
+.testimonials h2{
+    color: #ec4899;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.review{
+    width: 300px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #fce7f3;
+
+    box-shadow:
+    0 10px 20px rgba(236,72,153,0.08);
+
+    transition: 0.3s;
+}
+
+.review:hover{
+    transform: translateY(-8px);
+}
+
+.review p{
+    margin-bottom: 15px;
+}
+
+.review h4{
+    color: #ec4899;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq{
+    padding: 80px 20px;
+}
+
+.faq h2{
+    text-align: center;
+    color: #ec4899;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.faq-item{
+    max-width: 800px;
+
+    margin: 20px auto;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #fce7f3;
+
+    box-shadow:
+    0 5px 15px rgba(236,72,153,0.08);
+}
+
+.faq-item h3{
+    color: #ec4899;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+.card img{
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+@media(max-width:768px){
+
+    .product-overview{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .overview-content h1{
+        font-size: 2.3rem;
+    }
+
+    .overview-content p{
+        max-width: 100%;
+    }
+
+    .overview-image img{
+        max-width: 100%;
+    }
+
+    .pricing h2,
+    .testimonials h2,
+    .faq h2,
+    .product-features h2{
+        font-size: 2rem;
+    }
+
+    .plan,
+    .review{
+        width: 100%;
+        max-width: 350px;
+    }
+}
