@@ -442,9 +442,6 @@ footer p{
     margin-bottom: 10px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 .card img{
     width: 120px;
     height: 120px;
@@ -453,6 +450,223 @@ footer p{
 
     margin-bottom: 20px;
 }
+.card img{
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-section{
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+    0 10px 25px rgba(236,72,153,0.08);
+}
+
+.contact-section h1{
+    text-align: center;
+    color: #ec4899;
+    margin-bottom: 10px;
+}
+
+.contact-section p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label{
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    padding: 12px;
+
+    border: 1px solid #fbcfe8;
+
+    border-radius: 10px;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color: #ec4899;
+}
+
+.radio-group,
+.checkbox-group{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-buttons button{
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #ec4899;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.form-buttons button:hover{
+    background: #db2777;
+}
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.vision{
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff7fa;
+}
+
+.vision h1{
+    color: #ec4899;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.vision p{
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.story{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.story h2{
+    color: #ec4899;
+    margin-bottom: 20px;
+}
+
+.story p{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Team */
+
+.team{
+    padding: 80px 20px;
+    background: #fff7fa;
+    text-align: center;
+}
+
+.team h2{
+    color: #ec4899;
+    margin-bottom: 50px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-card{
+    width: 250px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #fce7f3;
+
+    box-shadow:
+    0 10px 20px rgba(236,72,153,0.08);
+
+    transition: 0.3s;
+}
+
+.team-card:hover{
+    transform: translateY(-8px);
+}
+
+.team-card img{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+.team-card h3{
+    color: #1f2937;
+}
+
+.team-card p{
+    color: #ec4899;
+}
+
+/* Roles */
+
+.roles{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.roles h2{
+    color: #ec4899;
+    margin-bottom: 30px;
+}
+
+.roles ul{
+    list-style: none;
+}
+
+.roles li{
+    margin: 15px 0;
+    font-size: 18px;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
 
 @media(max-width:768px){
 
